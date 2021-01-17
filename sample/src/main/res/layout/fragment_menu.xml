@@ -1,0 +1,65 @@
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/vNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@drawable/blu"
+            app:headerLayout="@layout/view_global_menu_header"
+            app:itemIconTint="#C04000"
+            app:itemTextColor="#993300"
+            >
+            <!--app:menu="@menu/drawer_menu">-->
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="350dp"
+                            android:src="@drawable/due_persone_comunicano"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginBottom="-50dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            app:fontFamily="@font/greatvibes"
+                            android:textSize="22sp"
+                            android:text="@string/descrizione_nav"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+
+
+        </android.support.design.widget.NavigationView>
+
+    </RelativeLayout>

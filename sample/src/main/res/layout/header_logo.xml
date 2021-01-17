@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logo_white"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:paddingBottom="30dp"
+    android:layout_marginBottom="70dp"
+    android:src="@drawable/lis_traslator_text" />
+ <!--   <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/logo_white"
+       android:layout_width="wrap_content"
+       android:layout_height="@dimen/materialviewpager_logoHeight"
+       android:text="@string/lis_translator"
+       android:textSize="30sp"
+       android:textColor="@android:color/white"/> -->
+
+
+

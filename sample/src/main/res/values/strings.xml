@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lis Translator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lis_translator">Lis Translator</string>
+    <string name="descrizione_nav">Con Lis Translator potrai tradurre la lingua italiana dei segni: riproduci un segno attraverso i tuoi guanti e collegando il guanto all"'"applicazione potrai visualizzare il risultato della traduzione, ma non è tutto! "\n" Si possono mandare messaggi al guanto, visualizzare le conversazioni e far apprendere nuovi segni!</string>
+    <string name="user_profile_photo">http://baobaoloveyou.com/flowingdrawer_icon.png</string>
+</resources>
