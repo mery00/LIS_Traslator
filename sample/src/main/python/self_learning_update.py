@@ -45,13 +45,18 @@ def model_self_learning(java_matrix, parola_segno):
     gest = gest + [trad[0]]
     num = 0
     numTrad = 0
+    check = False
 
     for x in trad:
-      if x != gest[num]:
-        print(x)
-        num = num + 1
-        gest = gest + [trad[numTrad]]
-      numTrad = numTrad + 1
+        for i in gest:
+            if i == x:
+                check = True
+        if check == False:
+            if x != gest[num]:
+                num = num + 1
+                gest = gest + [trad[numTrad]]
+        numTrad = numTrad + 1
+        check  = False
 
     i = 0
     for x in gest:
@@ -84,8 +89,6 @@ def model_self_learning(java_matrix, parola_segno):
     input_shape=(x_train.shape[1], 1)
 
 
-
-    # QUELLO CHE VA MEGLIO
     model = Sequential()
     model.add(Conv1D(filters=32, kernel_size=3,activation='linear',input_shape=input_shape))
     model.add(LeakyReLU(alpha=0.1))
