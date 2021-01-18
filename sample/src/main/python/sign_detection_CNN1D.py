@@ -18,29 +18,18 @@ def conv1D_model(segno):
     num = 0
     numTrad = 0
 
-    check = False
-
-##    for x in trad:
-##    for value in gest:
-##        print(value)
-##            if x == y:
-##                check = True
-            
-##        if check == False:  
-##        if x != gest[num]:
-##            num = num + 1
-##            gest = gest + [trad[numTrad]]
-##            numTrad = numTrad + 1
-##        check = False
-##
-##    print(gest)
-
+        check = False
 
     for x in trad:
-      if x != gest[num]:
-        num = num + 1
-        gest = gest + [trad[numTrad]]
-      numTrad = numTrad + 1
+        for i in gest:
+            if i == x:
+                check = True
+        if check == False:
+            if x != gest[num]:
+                num = num + 1
+                gest = gest + [trad[numTrad]]
+        numTrad = numTrad + 1
+        check  = False 
 
     for x in gest:
         print(x)
@@ -55,4 +44,4 @@ def conv1D_model(segno):
         pos = pos + 1
         
     return gest[pos_max]
-print(conv1D_model([[28,100,67,66,40,0,0,1,1,0,59,224,104,25,96,64,63,31,0,0,1,1,0,58,225,102,39,96,66,65,25,0,0,0,0,0,70,219,133,0,19,6,9,0,0,0,0,0,0,27,136,58,0,3,0,0,0,0,0,0,0,0,30,134,4,31,44,48,32,6,0,0,0,0,0,-57,87,113,174,180,180,180,172,0,0,0,0,0,67,214,101,48,4,0,1,0,0,0,0,0,0,195,35,306,142,160,174,168,126,0,0,0,0,0,74,248,118,75,38,16,19,10,0,0,0,0,0,177,93,273]]))
+#print(conv1D_model([[28,100,67,66,40,0,0,1,1,0,59,224,104,25,96,64,63,31,0,0,1,1,0,58,225,102,39,96,66,65,25,0,0,0,0,0,70,219,133,0,19,6,9,0,0,0,0,0,0,27,136,58,0,3,0,0,0,0,0,0,0,0,30,134,4,31,44,48,32,6,0,0,0,0,0,-57,87,113,174,180,180,180,172,0,0,0,0,0,67,214,101,48,4,0,1,0,0,0,0,0,0,195,35,306,142,160,174,168,126,0,0,0,0,0,74,248,118,75,38,16,19,10,0,0,0,0,0,177,93,273]]))
