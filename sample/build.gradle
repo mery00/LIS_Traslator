@@ -7,7 +7,7 @@ android {
     buildToolsVersion project.buildTools
 
     defaultConfig {
-        applicationId "com.project.LISTraslator"
+        applicationId "com.unisa.project.LISTraslator"
         minSdkVersion project.minSdk
         targetSdkVersion project.sdk
         versionCode 4
